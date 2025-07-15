@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploraUP - Señalización Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ExploraUP</h1>
+    <p>Ubica fácilmente los espacios dentro del campus universitario</p>
+  </header>
+
+  <main>
+    <section class="menu">
+      <button onclick="mostrarInfo('biblioteca')">Biblioteca</button>
+      <button onclick="mostrarInfo('cafeteria')">Cafetería</button>
+      <button onclick="mostrarInfo('cidete')">CIDETE</button>
+      <button onclick="mostrarInfo('pinacoteca')">Pinacoteca</button>
+      <button onclick="mostrarInfo('salones100')">Salones 100</button>
+      <button onclick="mostrarInfo('salones200')">Salones 200</button>
+      <button onclick="mostrarInfo('salones300')">Salones 300</button>
+      <button onclick="mostrarInfo('salones400')">Salones 400</button>
+      <button onclick="mostrarInfo('salones500')">Salones 500</button>
+      <button onclick="mostrarInfo('laboratorios')">Laboratorios</button>
+    </section>
+
+    <section class="info" id="infoLugar">
+      <p>Selecciona un lugar para ver detalles.</p>
+    </section>
+
+    <div class="video-container" id="videoLugar" style="display:none;">
+      <video id="videoDemo" controls>
+        <source src="" type="video/mp4">
+        Tu navegador no soporta el video HTML5.
+      </video>
+    </div>
+  </main>
+
+  <div class="acceso-qr">
+    <h2>Puedes acceder a la página escaneando el siguiente código QR</h2>
+    <p>👇👇👇<br>
+      ¡Explora y descubre todas las ubicaciones dentro de la universidad desde tu dispositivo móvil!</p>
+  </div>
+  <img src="qr.png" alt="Código QR para acceder a la página"
+       style="display:block; margin: 20px auto; max-width:200px;">
+
+  <footer>
+    <p>Universidad de Panamá - Señalización Digital 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
